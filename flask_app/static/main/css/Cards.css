@@ -10,7 +10,7 @@ body {
 .card {
     width: 400px;
     height: 300px;
-    background-color: #4CAF50; /* Vibrant green color */
+    background-color: #4CAF50; 
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,13 +19,13 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Add this line */
+    z-index: 2; 
     position: relative;
 }
 
 .card p{
     font-size: 60px;
-    z-index: 3; /* Add this line */
+    z-index: 3; 
     position: relative;
 }
 
