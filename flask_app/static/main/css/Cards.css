@@ -19,8 +19,20 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .card p{
     font-size: 60px;
+}
+
+.card::before {
+    content: url('your-icon.png'); /* Replace 'your-icon.png' with the path to the image*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    opacity: 0.5;
 }
