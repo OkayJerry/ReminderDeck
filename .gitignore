@@ -1,0 +1,48 @@
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+*.pyc
+*.pyo
+*.pyd
+*.log
+.coverage
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Local environment settings
+.env.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime*
+*.pycharm*
+*.vscode*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
