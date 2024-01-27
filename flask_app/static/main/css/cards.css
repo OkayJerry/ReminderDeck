@@ -140,7 +140,7 @@
 
 .card-workout::before {
     content: ''; 
-    position: absolute;
+    /* position: absolute; */
     top: 3;
     left: 3;
     width: 200px;
