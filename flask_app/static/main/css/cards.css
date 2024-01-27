@@ -1,13 +1,4 @@
 /* Duck Task */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
 .card-duck {
     width: 400px;
     height: 300px;
@@ -137,7 +128,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 2; 
-    position: relative;
+    flex: 0 0 auto;
+    cursor: pointer;
 }
 
 .card-workout p{
