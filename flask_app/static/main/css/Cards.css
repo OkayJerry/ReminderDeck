@@ -19,11 +19,11 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 
 .card p{
     font-size: 60px;
+    z-index: 1;
 }
 
 .card::before {
