@@ -13,10 +13,10 @@
 
     <!-- Navigation Section -->
     <div class="toolbar">
-        <div class="card-workout" onclick="moveCardToNav(this)">Workout</div>
-        <div class="card-study" onclick="moveCardToNav(this)">Study</div>
-        <div class="card-guitar" onclick="moveCardToNav(this)">Guitar</div>
-        <div class="card-duck" onclick="moveCardToNav(this)">Duck</div>
+        <div class="card-workout" onclick="copyCardToNav(this)">Workout</div>
+        <div class="card-study" onclick="copyCardToNav(this)">Study</div>
+        <div class="card-guitar" onclick="copyCardToNav(this)">Guitar</div>
+        <div class="card-duck" onclick="copyCardToNav(this)">Duck</div>
 
         <div class="add-card-button" onclick="addCardToToolbar()">+</div>
         <script>
@@ -25,23 +25,17 @@
                 var newCard = document.createElement("div");
                 newCard.className = "rectangle";
                 newCard.onclick = function() {
-                    moveCardToNav(this);
+                    copyCardToNav(this);
                 };
 
                 // Get the toolbar
                 var toolbar = document.querySelector('.toolbar');
 
-                // Check if there are existing rectangles in the toolbar
-                if (toolbar.children.length > 0) {
-                    // If there are existing rectangles, insert the new rectangle before the first child
-                    toolbar.insertBefore(newCard, toolbar.children[0]);
-                } else {
-                    // If there are no existing rectangles, simply append the new rectangle
-                    toolbar.appendChild(newCard);
-                }
+                // HERE
+                toolbar.insertBefore(newCard, toolbar.lastElementChild);
             }
 
-            function moveCardToNav(card) {
+            function copyCardToNav(card) {
                 var nav = document.querySelector('nav');
                 var copiedCard = card.cloneNode(true); // Clone the card, including its children and attributes
                 nav.appendChild(copiedCard);
