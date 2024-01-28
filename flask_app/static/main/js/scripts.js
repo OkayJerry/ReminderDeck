@@ -21,23 +21,28 @@ function copyCardToNav(card) {
     var cardCopy = card.cloneNode(true);
 
     // Remove `on click` response
-    cardCopy.onclick = null;
+    cardCopy.onclick = function() {
+        addDutyToColumn(newColumn);
+    };
 
     // Add the `card` to the `card-column`
     newColumn.appendChild(cardCopy)
 
     // Add the `card-column` to the `nav`
     document.querySelector('nav').appendChild(newColumn);
-
-    addDutyToColumn(newColumn);
 }
 
-function addDutyToColumn(cardColumn) {
-    // Create a new `duty`
+function addDutyToColumn(column) {
     var duty = document.createElement("div");
     duty.className = "duty";
 
-    var yPos = cardColumn.childElementCount * 50;
+    var yPos = 70 + column.childElementCount * 90;
     duty.style.top = yPos + 'px';
-    cardColumn.appendChild(childDiv);
+
+    column.append(duty);
+
+    for (var i = 0; i < column.childElementCount; ++i)
+        column.children[i].style.zIndex = -i;
+
+    return duty;
 }
