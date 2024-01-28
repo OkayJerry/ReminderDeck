@@ -14,5 +14,15 @@
     border: red;
     position: absolute;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
+.duty-textbox {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
