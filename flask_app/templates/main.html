@@ -9,6 +9,8 @@
     <title>Some Title</title>
 </head>
 <body>
+    <script src="static/main/js/scripts.js"></script>
+    
     <h1>Some Title</h1>
 
     <!-- Navigation Section -->
@@ -19,30 +21,6 @@
         <div class="card-duck" onclick="copyCardToNav(this)">Duck</div>
 
         <div class="add-card-button" onclick="addCardToToolbar()">+</div>
-        <script>
-            function addCardToToolbar() {
-                // Create a new div element for the rectangle
-                var newCard = document.createElement("div");
-                newCard.className = "rectangle";
-                newCard.onclick = function() {
-                    copyCardToNav(this);
-                };
-
-                // Get the toolbar
-                var toolbar = document.querySelector('.toolbar');
-
-                var addButton = document.querySelector('.add-card-button');
-
-                // Insert the new card before the add button
-                toolbar.insertBefore(newCard, addButton);
-            }
-
-            function copyCardToNav(card) {
-                var nav = document.querySelector('nav');
-                var copiedCard = card.cloneNode(true); // Clone the card, including its children and attributes
-                nav.appendChild(copiedCard);
-            }
-        </script>
     </div>
 
     <hr>
