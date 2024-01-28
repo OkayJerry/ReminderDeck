@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Center the box */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style the box */
+        .centered-box {
+            display: flex;
+            flex-direction: row; /* Set flex direction to row */
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the button */
+        .centered-box button {
+            margin-left: 20px; /* Add 15px space between the default value and the button */
+        }
+
+        /* Style the counter paragraph */
+        #counter {
+            margin-right: 15px; /* Add 10px margin to the right of the counter */
+        }
+
+        /* Style the division symbol */
+        .division-symbol {
+            font-size: 16px;
+            margin-left: 5px; /* Adjust the space between the division symbol and the default value */
+        }
+
+        /* Style the editable number */
+        .editable-number {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin-left: 15px; /* Add 15px space between the default value and the button */
+            white-space: nowrap; /* Prevent line breaks */
+            max-height: 20px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow content */
+        }
+    </style>
+    <title>Centered Box with Button</title>
+</head>
+<body>
+    <div class="centered-box">
+        <p id="counter">0</p>
+        <span class="division-symbol">/</span>
+        <div id="editableNumber" class="editable-number" contentEditable="true" oninput="updateEditableNumber(this)" onkeydown="handleKeyPress(event)" onblur="checkInput()">10</div>
+        <button onclick="incrementCounter(); checkInput();">+1 Rep</button>
+    </div>
+
+    <script>
+        let counter = 0;
+        let editableNumber = 10; // Set the default value to 10
+
+        function incrementCounter() {
+            counter++;
+            document.getElementById('counter').innerText = counter;
+        }
+
+        function updateEditableNumber(element) {
+            const inputValue = parseInt(element.innerText) || 0;
+            editableNumber = isNaN(inputValue) ? 10 : inputValue;
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent line break
+                document.getElementById('editableNumber').blur(); // Remove focus from editableNumber
+            }
+        }
+
+        function checkInput() {
+            const editableNumberElement = document.getElementById('editableNumber');
+            const inputValue = parseInt(editableNumberElement.innerText) || 0;
+
+            // If input is not a number or is 0, set it to the default value (10)
+            if (isNaN(inputValue) || inputValue === 0) {
+                editableNumberElement.innerText = 1;
+            }
+        }
+    </script>
+</body>
+</html>

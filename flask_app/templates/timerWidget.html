@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Countdown Timer</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #timer-box {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex; /* Added this property to make child elements flex items */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            flex-direction: row; /* Align children horizontally */
+        }
+
+        #timer {
+            font-size: 24px;
+            margin-right: 15px; /* Increased the distance between timer and button */
+        }
+
+        #timer input {
+            width: 30px;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 5px;
+            border: none;
+            outline: none;
+        }
+
+        #toggleButton {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="timer-box" onclick="editTimer(event)">
+    <div id="timer">
+        <input type="text" id="minutes" maxlength="2" value="01">
+        <span>:</span>
+        <input type="text" id="seconds" maxlength="2" value="00">
+    </div>
+    <button id="toggleButton" onclick="toggleTimer()">Start</button>
+</div>
+
+<script>
+    let timer;
+    let isTimerRunning = false;
+
+    function toggleTimer() {
+        if (isTimerRunning) {
+            stopTimer();
+            document.getElementById("toggleButton").innerText = "Start";
+            isTimerRunning = false;
+        } else {
+            startTimer();
+            document.getElementById("toggleButton").innerText = "Stop";
+            isTimerRunning = true;
+        }
+    }
+
+    function startTimer() {
+        let minutes = parseInt(document.getElementById("minutes").value, 10);
+        let seconds = parseInt(document.getElementById("seconds").value, 10);
+        timer = setInterval(() => {
+            updateTimer(minutes, seconds);
+            if (minutes === 0 && seconds === 0) {
+                stopTimer();
+                document.getElementById("toggleButton").innerText = "Start";
+                isTimerRunning = false;
+            } else {
+                if (seconds === 0) {
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+            }
+            updateDisplay(minutes, seconds);
+        }, 1000);
+    }
+
+    function stopTimer() {
+        clearInterval(timer);
+    }
+
+    function updateTimer(minutes, seconds) {
+        if (minutes === 0 && seconds === 0) {
+            stopTimer();
+            document.getElementById("toggleButton").innerText = "Start";
+            isTimerRunning = false;
+        } else {
+            if (seconds === 0) {
+                minutes--;
+                seconds = 59;
+            } else {
+                seconds--;
+            }
+            updateDisplay(minutes, seconds);
+        }
+    }
+
+    function updateDisplay(minutes, seconds) {
+        const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+        const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+        document.getElementById("minutes").value = formattedMinutes;
+        document.getElementById("seconds").value = formattedSeconds;
+    }
+
+    function editTimer(event) {
+        if (!isTimerRunning && event.target.tagName === "INPUT") {
+            // Set focus on the clicked input
+            event.target.focus();
+        }
+    }
+
+    // Handle blur event to update the timer when focus is lost
+    document.getElementById("minutes").addEventListener("blur", updateTimerInput);
+    document.getElementById("seconds").addEventListener("blur", updateTimerInput);
+
+    // Handle arrow key presses to switch between input boxes
+    document.getElementById("minutes").addEventListener("keydown", switchInput);
+    document.getElementById("seconds").addEventListener("keydown", switchInput);
+
+    // Handle Enter key press to start or stop the timer
+    document.getElementById("minutes").addEventListener("keydown", handleEnterKey);
+    document.getElementById("seconds").addEventListener("keydown", handleEnterKey);
+
+    function switchInput(event) {
+        if (event.key === "ArrowLeft" && event.target.selectionStart === 0) {
+            // Move to the previous input box
+            document.getElementById("minutes").focus();
+        } else if (event.key === "ArrowRight" && event.target.selectionStart === event.target.value.length) {
+            // Move to the next input box
+            document.getElementById("seconds").focus();
+        }
+    }
+
+    function handleEnterKey(event) {
+        if (event.key === "Enter") {
+            toggleTimer();
+            // Move focus away from the input elements after hitting Enter
+            document.activeElement.blur();
+        }
+    }
+
+    function updateTimerInput() {
+        if (!isTimerRunning) {
+            let minutes = parseInt(document.getElementById("minutes").value, 10);
+            let seconds = parseInt(document.getElementById("seconds").value, 10);
+
+            // If seconds are greater than 60, convert them to minutes and seconds
+            let additionalMinutes = Math.floor(seconds / 60);
+            seconds %= 60;
+
+            // Update the minutes value
+            minutes += additionalMinutes;
+
+            // Validate and set default values if necessary
+            minutes = isNaN(minutes) ? 0 : Math.max(0, Math.min(59, minutes));
+            seconds = isNaN(seconds) ? 0 : Math.max(0, Math.min(59, seconds));
+
+            document.getElementById("minutes").value = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").value = seconds < 10 ? "0" + seconds : seconds;
+        }
+    }
+</script>
+
+</body>
+</html>
