@@ -31,8 +31,10 @@
                 // Get the toolbar
                 var toolbar = document.querySelector('.toolbar');
 
-                // HERE
-                toolbar.insertBefore(newCard, toolbar.lastElementChild);
+                var addButton = document.querySelector('.add-card-button');
+
+                // Insert the new card before the add button
+                toolbar.insertBefore(newCard, addButton);
             }
 
             function copyCardToNav(card) {
