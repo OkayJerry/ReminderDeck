@@ -1,8 +1,12 @@
 .toolbar {
+    width: 100vw;
+    height: 200px;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .add-card-button {
