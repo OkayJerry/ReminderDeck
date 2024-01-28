@@ -1,0 +1,28 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.add-card-button {
+    display: flex;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    background-color: #0000005c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(30, 1, 1, 0.5);
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.add-card-button:hover {
+    opacity: 0.95;
+}

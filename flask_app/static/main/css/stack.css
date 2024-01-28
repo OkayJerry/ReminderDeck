@@ -1,32 +1,17 @@
-.stack {
-    position: relative;
-}
-
 .rectangle {
+    flex: 0 0 auto;
     width: 200px;
-    height: 100px;
+    height: 150px;
     background-color: #3498db;
     border-radius: 15px;
+    padding: 20px;
     margin: 10px;
-    position: absolute;
-    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.rectangle:nth-child(2) {
-    top: 20px; /* Adjusted overlap for the second rectangle */
-    left: 10px; /* Adjusted overlap for the second rectangle */
-    border: 2px solid gray; /* Light grey border */
-}
-
-.rectangle:nth-child(3) {
-top: 40px; /* Adjusted overlap for the third rectangle */
-left: 20px; /* Adjusted overlap for the third rectangle */
-border: 2px solid gray; /* Light grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }

@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static/main/css/stack.css">
+    <link rel="stylesheet" href="static/main/css/toolbar.css">
+    <link rel="stylesheet" href="static/main/css/nav.css">
+    <link rel="stylesheet" href="static/main/css/cards.css"
     <title>Some Title</title>
 </head>
 <body>
+    <script src="static/main/js/scripts.js"></script>
+    
     <h1>Some Title</h1>
 
-    <div class="stack">
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
+    <!-- Navigation Section -->
+    <div class="toolbar">
+        <div class="card-workout" onclick="copyCardToNav(this)">Workout</div>
+        <div class="card-study" onclick="copyCardToNav(this)">Study</div>
+        <div class="card-guitar" onclick="copyCardToNav(this)">Guitar</div>
+        <div class="card-duck" onclick="copyCardToNav(this)">Duck</div>
+
+        <div class="add-card-button" onclick="addCardToToolbar()">+</div>
     </div>
+
+    <hr>
+
+    <nav>
+
+    </nav>
 
 </body>
 </html>

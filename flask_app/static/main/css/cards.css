@@ -1,0 +1,155 @@
+/* Duck Task */
+.card-duck {
+    width: 200px;
+    height: 150px;
+    background-color: #adacb4; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.card-duck p{
+    font-size: 25px;
+    z-index: 3; 
+}
+
+.card-duck::before {
+    content: ''; 
+    top: 3;
+    left: 3;
+    width: 200px;
+    height: 150px;
+    z-index: 1; 
+    opacity: 0.3;
+    background-image: url('images/duck.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* Guitar Task */
+.card-guitar {
+    width: 200px;
+    height: 150px;
+    background-color: #17a4c8;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.card-guitar p{
+    font-size: 25px;
+    z-index: 3; 
+    position: relative;
+}
+
+.card-guitar::before {
+    content: ''; 
+    top: 3;
+    left: 3;
+    width: 200px;
+    height: 150px;
+    z-index: 1; 
+    opacity: 0.3;
+    background-image: url('images/Guitar.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* Study Task */
+.card-study {
+    width: 200px;
+    height: 150px;
+    background-color: #e33c09;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.card-study p{
+    font-size: 25px;
+    z-index: 3;
+}
+
+.card-study::before {
+    content: ''; 
+    top: 3;
+    left: 3;
+    width: 200px;
+    height: 150px;
+    z-index: 1; 
+    opacity: 0.3;
+    background-image: url('images/book.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* Workout Task */
+.card-workout {
+    width: 200px;
+    height: 150px;
+    background-color: #4CAF50; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.card-workout p{
+    font-size: 25px;
+    z-index: 3; 
+}
+
+.card-workout::before {
+    content: ''; 
+    top: 3;
+    left: 3;
+    width: 200px;
+    height: 150px;
+    z-index: 1; 
+    opacity: 0.2;
+    background-image: url('images/Workout1.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
