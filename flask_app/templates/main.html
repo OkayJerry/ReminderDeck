@@ -8,13 +8,34 @@
     <link rel="stylesheet" href="static/main/css/nav.css">
     <link rel="stylesheet" href="static/main/css/cards.css">
     <link rel="stylesheet" href="static/main/css/add_duties.css">
+    <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="static/main/css/stepper.css">
+    <link rel="stylesheet" href="static/main/css/timer.css">
     <style> body {margin: 0; padding: 0; background-color: rgb(7, 64, 16);} </style>
 </head>
 
 <body>
     <script src="static/main/js/scripts.js"></script>
     <!-- "GAMBLE ON YOURSELF" -->
+
     <!-- Navigation Section -->
+    <nav>
+        <!-- Container for image and links -->
+        <div class="container">
+            <img src="static/main/css/images/logo.png" alt="DeckedDuties" class="logo">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Right-aligned search bar -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <!-- You can add a search button here if needed -->
+        </div>
+    </nav>
+    
     <div class="toolbar">
         <div class="card-workout" onclick="copyCardToNav(this)">
             <img src="css/images/heart.png" alt="Heart" class="heart2">
@@ -44,9 +65,7 @@
         <div class="add-card-button" onclick="addCardToToolbar()">+</div>
     </div>
 
-    <main>
-
-    </main>
+    <div class="workspace"></div>
 
 </body>
 </html>

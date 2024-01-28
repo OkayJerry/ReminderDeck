@@ -1,0 +1,39 @@
+/* Style the box */
+.centered-box {
+    display: flex;
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the button */
+.centered-box button {
+    margin-left: 20px; /* Add 15px space between the default value and the button */
+}
+
+/* Style the counter paragraph */
+#counter {
+    margin-right: 15px; /* Add 10px margin to the right of the counter */
+}
+
+/* Style the division symbol */
+.division-symbol {
+    font-size: 16px;
+    margin-left: 5px; /* Adjust the space between the division symbol and the default value */
+}
+
+/* Style the editable number */
+.editable-number {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 15px; /* Add 15px space between the default value and the button */
+    white-space: nowrap; /* Prevent line breaks */
+    max-height: 20px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow content */
+}

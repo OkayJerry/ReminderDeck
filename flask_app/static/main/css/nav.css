@@ -1,0 +1,55 @@
+nav {
+    background-color: #000000;
+    padding: 15px 40px; /* Increased height and added left/right margin */
+    text-align: left; /* Align elements to the left */
+    position: fixed;
+    width: 100%; /* Fill the full width of the web page */
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center elements vertically */
+    justify-content: space-between; /* Space between elements */
+    height: 5vh;
+}
+
+/* Style the navbar links */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Top and bottom margin of 15px */
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    background-color: #555;
+    border-color: white;
+}
+
+/* Style the search bar */
+.search-bar {
+    margin: 10px 0; /* Top and bottom margin of 15px */
+    margin-right: 50px;
+}
+
+/* Style the search input */
+.search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Style the container div */
+.container {
+    display: flex;
+    align-items: center; /* Center elements vertically */
+}
+
+/* Style the logo */
+.logo {
+    max-width: 50px; /* Adjust the max-width as needed */
+    margin-right: 10px;
+}

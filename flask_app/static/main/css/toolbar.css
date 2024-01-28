@@ -7,6 +7,7 @@
     white-space: nowrap;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 8vh;
 }
 
 .add-card-button {
