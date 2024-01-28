@@ -33,15 +33,15 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Bench Press";
-        dutyTextBox.style.top = relativePos
+        dutyTextBox.textContent = "Bench Press -- 8 / 8";
+        dutyTextBox.style.top = relativePos;
         duty1.appendChild(dutyTextBox);
 
         var duty2 = addDutyToColumn(newColumn);
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Squat";
+        dutyTextBox.textContent = "Squat -- 5 / 6";
         dutyTextBox.style.top = relativePos;
         duty2.appendChild(dutyTextBox);
 
@@ -49,7 +49,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Deadlift";
+        dutyTextBox.textContent = "Deadlift -- 0 / 6";
         dutyTextBox.style.top = relativePos;
         duty3.appendChild(dutyTextBox);
 
@@ -57,7 +57,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Push-Ups";
+        dutyTextBox.textContent = "Push-Ups -- 10 / 50";
         dutyTextBox.style.top = relativePos;
         duty4.appendChild(dutyTextBox);
 
@@ -65,7 +65,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Sprint";
+        dutyTextBox.textContent = "Sprint -- 15:00";
         dutyTextBox.style.top = relativePos;
         duty5.appendChild(dutyTextBox);
 
@@ -73,7 +73,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Pull-Ups";
+        dutyTextBox.textContent = "Pull-Ups -- 0/20";
         dutyTextBox.style.top = relativePos;
         duty6.appendChild(dutyTextBox);
     }
@@ -83,7 +83,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Read Textbook";
+        dutyTextBox.textContent = "Read Textbook -- 25:00";
         dutyTextBox.style.top = relativePos;
         duty1.appendChild(dutyTextBox);
 
@@ -91,7 +91,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Practice Problems";
+        dutyTextBox.textContent = "Practice Problems -- 20:00";
         dutyTextBox.style.top = relativePos;
         duty2.appendChild(dutyTextBox);
 
@@ -99,7 +99,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Flashcards";
+        dutyTextBox.textContent = "Flashcards -- 10:00";
         dutyTextBox.style.top = relativePos;
         duty3.appendChild(dutyTextBox);
 
@@ -107,7 +107,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Review Physics";
+        dutyTextBox.textContent = "Review Physics -- 20:00";
         dutyTextBox.style.top = relativePos;
         duty4.appendChild(dutyTextBox);
 
@@ -115,7 +115,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Practice Spanish";
+        dutyTextBox.textContent = "Practice Spanish -- 17:00";
         dutyTextBox.style.top = relativePos;
         duty5.appendChild(dutyTextBox);
     }
@@ -125,7 +125,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Scales";
+        dutyTextBox.textContent = "Scales -- 20:00";
         dutyTextBox.style.top = relativePos
         duty1.appendChild(dutyTextBox);
 
@@ -133,7 +133,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Chords";
+        dutyTextBox.textContent = "Chords -- 20:00";
         dutyTextBox.style.top = relativePos;
         duty2.appendChild(dutyTextBox);
 
@@ -141,7 +141,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Harmony";
+        dutyTextBox.textContent = "Harmony -- 10:00";
         dutyTextBox.style.top = relativePos;
         duty3.appendChild(dutyTextBox);
 
@@ -149,7 +149,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Arpeggios";
+        dutyTextBox.textContent = "Arpeggios -- 30:00";
         dutyTextBox.style.top = relativePos;
         duty4.appendChild(dutyTextBox);
 
@@ -157,7 +157,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Melody";
+        dutyTextBox.textContent = "Melody -- 20:00";
         dutyTextBox.style.top = relativePos;
         duty5.appendChild(dutyTextBox);
 
@@ -165,7 +165,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Triads";
+        dutyTextBox.textContent = "Triads -- 20:00";
         dutyTextBox.style.top = relativePos;
         duty6.appendChild(dutyTextBox);
 
@@ -173,7 +173,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Sight-Read";
+        dutyTextBox.textContent = "Sight-Read -- 10:00";
         dutyTextBox.style.top = relativePos;
         duty7.appendChild(dutyTextBox);
 
@@ -181,7 +181,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Improvise";
+        dutyTextBox.textContent = "Improvise -- 30:00";
         dutyTextBox.style.top = relativePos;
         duty8.appendChild(dutyTextBox);
 
@@ -199,7 +199,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Large";
+        dutyTextBox.textContent = "Large -- 2 / 20";
         dutyTextBox.style.top = relativePos
         duty1.appendChild(dutyTextBox);
 
@@ -207,7 +207,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Mini";
+        dutyTextBox.textContent = "Mini -- 8 / 30";
         dutyTextBox.style.top = relativePos;
         duty2.appendChild(dutyTextBox);
 
@@ -215,7 +215,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Blue";
+        dutyTextBox.textContent = "Blue -- 3 / 6";
         dutyTextBox.style.top = relativePos;
         duty3.appendChild(dutyTextBox);
 
@@ -223,7 +223,7 @@ function copyCardToNav(card) {
         
         var dutyTextBox = document.createElement("div");
         dutyTextBox.className = "duty-textbox";
-        dutyTextBox.textContent = "Translucent";
+        dutyTextBox.textContent = "Translucent -- 5 / 10";
         dutyTextBox.style.top = relativePos;
         duty4.appendChild(dutyTextBox);
     }
@@ -242,4 +242,11 @@ function addDutyToColumn(column) {
         column.children[i].style.zIndex = -i;
 
     return duty;
+}
+
+function createStepper(max) {
+    var stepper = document.createElement("div");
+    stepper.className = 'stepper';
+    stepper.innerHTML = '0 / '+ max;
+    return stepper;
 }

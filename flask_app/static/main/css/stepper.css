@@ -1,17 +1,21 @@
 /* Style the box */
-.centered-box {
+.stepper {
+    width: 100px;
+    height: 50px;
     display: flex;
-    flex-direction: row; /* Set flex direction to row */
-    align-items: center;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    position: relative;
 }
 
 /* Style the button */
-.centered-box button {
-    margin-left: 20px; /* Add 15px space between the default value and the button */
+.step {
+    margin-right: 20px; /* Add 15px space between the default value and the button */
+    height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    position: absolute;
 }
 
 /* Style the counter paragraph */
