@@ -233,7 +233,7 @@ function addDutyToColumn(column) {
     var duty = document.createElement("div");
     duty.className = "duty";
 
-    var yPos = 70 + column.childElementCount * 90;
+    var yPos = 35 + column.childElementCount * 90;
     duty.style.top = yPos + 'px';
 
     column.append(duty);
