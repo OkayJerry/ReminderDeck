@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the navbar */
+        nav {
+            background-color: #000000;
+            padding: 15px 40px; /* Increased height and added left/right margin */
+            text-align: left; /* Align elements to the left */
+            position: fixed;
+            width: 100%; /* Fill the full width of the web page */
+            top: 0;
+            z-index: 1000;
+            display: flex; /* Use flexbox for positioning */
+            align-items: center; /* Center elements vertically */
+            justify-content: space-between; /* Space between elements */
+        }
+
+        /* Style the navbar links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px 0; /* Top and bottom margin of 15px */
+            border-radius: 5px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        /* Change link color on hover */
+        nav a:hover {
+            background-color: #555;
+            border-color: white;
+        }
+
+        /* Style the search bar */
+        .search-bar {
+            margin: 10px 0; /* Top and bottom margin of 15px */
+        }
+
+        /* Style the search input */
+        .search-input {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Style the container div */
+        .container {
+            display: flex;
+            align-items: center; /* Center elements vertically */
+        }
+
+        /* Style the logo */
+        .logo {
+            max-width: 50px; /* Adjust the max-width as needed */
+            margin-right: 10px;
+        }
+
+        /* Add some margin to the content to prevent it from being covered by the fixed navbar */
+        body {
+            margin-top: 70px; /* Adjusted margin based on the increased navbar height */
+        }
+    </style>
+    <title>Fixed Navbar</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <!-- Container for image and links -->
+    <div class="container">
+        <img src="../logo.png" alt="Logo" class="logo">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Right-aligned search bar -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search...">
+        <!-- You can add a search button here if needed -->
+    </div>
+</nav>
+
+<!-- Your content goes here -->
+
+</body>
+</html>
