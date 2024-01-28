@@ -1,5 +1,6 @@
 /* Duck Task */
 .card-duck {
+    user-select: none;
     content: 'Duck Hunt';
     top: 0;
     left: 0;
@@ -82,6 +83,7 @@
 
 /* Guitar Task */
 .card-guitar {
+    user-select: none;
     width: 200px;
     height: 110px;
     background-color: #ffffff;
@@ -141,6 +143,7 @@
 
 /* Study Task */
 .card-study {
+    user-select: none;
     width: 200px;
     height: 110px;
     background-color: #ffffff;
@@ -202,6 +205,7 @@
 
 /* Workout Task */
 .card-workout {
+    user-select: none;
     width: 200px;
     height: 110px;
     background-color: #ffffff; 
@@ -262,6 +266,7 @@
 }
 
 .heart2 {
+    user-select: none;
     position: absolute;
     width: 50px;
     left: 10px;
@@ -270,6 +275,7 @@
 
 }
 .club2 {
+    user-select: none;
     position: absolute;
     width: 50px;
     left: 10px;
@@ -278,6 +284,7 @@
 
 }
 .spade2 {
+    user-select: none;
     position: absolute;
     width: 50px;
     left: 10px;
@@ -286,6 +293,7 @@
 
 }
 .diamond2 {
+    user-select: none;
     position: absolute;
     width: 50px;
     left: 10px;
