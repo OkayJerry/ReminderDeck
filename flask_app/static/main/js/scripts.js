@@ -24,7 +24,7 @@ function copyCardToNav(card) {
     newColumn.appendChild(cardCopy)
 
     // Add the `card-column` to the `nav`
-    document.querySelector('nav').appendChild(newColumn);
+    document.querySelector('main').appendChild(newColumn);
 
     var relativePos = 40 + 'px';
     if (cardCopy.className == "card-workout")

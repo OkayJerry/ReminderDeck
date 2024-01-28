@@ -17,3 +17,10 @@ body {
     color: white;
     text-align: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
+}
